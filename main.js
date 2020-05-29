@@ -1,12 +1,15 @@
 /*
 * This file is part of 'arcgis-js-tutorial'.
 *
-* To the extent possible under law, the author has dedicated all copyright and
-* related and neighboring rights to this software to the public domain worldwide.
+* To the extent possible under law, the author has dedicated all copyright 
+* and related and neighboring rights to this software to the public domain 
+* worldwide.
 *
 * This software is distributed without any warranty.
-* You should have received a copy of the CC0 Public Domain Dedication along with
-* this software. If not, see <http://creativecommons.org/publicdomain/zero/1.0/>.
+* 
+* You should have received a copy of the CC0 Public Domain Dedication 
+* along with this software. If not, see 
+* <http://creativecommons.org/publicdomain/zero/1.0/>.
 */
 
 console.log("Initialising Map and MapView..");
@@ -28,6 +31,12 @@ require(
 			map: map,
 			container: "domMap",
 			center: [ 101.64641, 3.08713 ],
+			/*
+			* The two-element array format is [ longitude, 
+			* latitude ]. If you look up somewhere on, say, 
+			* OpenStreetMap, you may get "latitude, longtitude".
+			* You will have to reverse them to use them here.
+			*/
 			zoom: 16
 		});
 		domStatusbar.innerHTML = 
