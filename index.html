@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ArcGIS Tutorial</title>
+  		<link rel="stylesheet" href="https://js.arcgis.com/4.15/esri/themes/light/main.css">
+		<link rel="stylesheet" href="./main.css">
+	</head>
+
+	<style>
+	#domMap {
+		width: 640px; height: 480px;
+	}
+	#domStatusbar {
+		padding: 3px; width: 640px;
+		background-color: #EEE; border: 1px solid #AAA;
+	}
+	</style>
+
+	<body>
+		<h1>PJ Old Town</h1>
+		<div id="domMap">
+		There is supposed to be a map here, but it is powered by JavaScript.
+		I apologise if you have JavaScript turned off - this website is
+		explicitly meant to be a test of a JavaScript API..
+		</div>
+		<br />
+		<div id="domStatusbar">
+		Waiting for JavaScript code to start and then update us.
+		</div>
+	</body>
+
+	<script src="https://js.arcgis.com/4.15/"></script>
+	<script src="main.js"></script>
+	<!--
+	Don't import anything else other than js.arcgis.com's given script.
+	It itself already imports the library that gives you the require statement.
+	(For example, don't go to require.js's website, download require.js, and use it here.)
+	-->
+</html>
